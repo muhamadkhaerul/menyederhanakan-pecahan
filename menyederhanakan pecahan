@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    cout << "===Menyederhanakan pecahan b/c menjadi a b/c===" << endl << endl;
+    int pembilang,penyebut, pembilang2, total;
+    cout << "Masukan pembilang: "; cin >> pembilang;
+    cout << "Masukan penyebut : "; cin >> penyebut;
+    cout << endl;
+    total = pembilang/penyebut;
+    pembilang2 = pembilang%penyebut;
+    if (pembilang%penyebut == 0)
+    {cout << "Bilangan ( " << pembilang << "/" << penyebut << " ) " << endl
+    << "disederhanakan menjadi ( " << total << " ) "<< endl;}
+    else if (pembilang%penyebut != 0)
+    {cout << "Bilangan ( " << pembilang << "/" << penyebut << " ) " << endl
+    << "disederhanakan menjadi ( " << total <<" "<< pembilang2 << "/" << penyebut
+    << " ) "<< endl;}
+
+        return 0;
+}
